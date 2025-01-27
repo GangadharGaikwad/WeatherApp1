@@ -1,4 +1,4 @@
-const apiKey = '5111cc4ff8f81816630116560733eaf5';
+const apiKey = '';
 const searchInput = document.querySelector('.search-input');
 const searchButton = document.querySelector('.search-button');
 const weatherIcon = document.querySelector('.weather-icon');
