@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="theme-toggle">
+                <button class="theme-btn">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search city..." class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="recent-searches">
+                <h3>Recent Searches</h3>
+                <ul class="recent-list"></ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="weather-header">
+                <div class="location-info">
+                    <h1 class="city"></h1>
+                    <p class="date-time"></p>
+                </div>
+                <div class="units-toggle">
+                    <button class="unit-btn active" data-unit="celsius">°C</button>
+                    <button class="unit-btn" data-unit="fahrenheit">°F</button>
+                </div>
+            </div>
+
+            <div class="weather-grid">
+                <div class="weather-card main-weather">
+                    <!-- Animation will be inserted here by JavaScript -->
+                    <div class="weather-content">
+                        <img src="" alt="weather icon" class="weather-icon">
+                        <h2 class="temperature"></h2>
+                        <p class="description"></p>
+                    </div>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Humidity</h3>
+                    <p class="humidity"></p>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Wind Speed</h3>
+                    <p class="wind-speed"></p>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-temperature-low"></i>
+                    <h3>Feels Like</h3>
+                    <p class="feels-like"></p>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <h3>Pressure</h3>
+                    <p class="pressure"></p>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>Air Quality</h3>
+                    <p class="aqi"></p>
+                    <p class="aqi-text" style="font-size: 0.9rem; margin-top: 0.5rem;"></p>
+                </div>
+
+                <div class="weather-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Sun Times</h3>
+                    <div class="sun-times">
+                        <p><i class="fas fa-sunrise"></i> <span class="sunrise"></span></p>
+                        <p><i class="fas fa-sunset"></i> <span class="sunset"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
