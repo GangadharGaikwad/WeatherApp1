@@ -28,18 +28,18 @@
 
         <main class="main-content">
             <div class="weather-header">
-                <div class="location-info">
+                <div class="location-info slide-in">
                     <h1 class="city"></h1>
                     <p class="date-time"></p>
                 </div>
-                <div class="units-toggle">
+                <div class="units-toggle fade-in">
                     <button class="unit-btn active" data-unit="celsius">°C</button>
                     <button class="unit-btn" data-unit="fahrenheit">°F</button>
                 </div>
             </div>
 
             <div class="weather-grid">
-                <div class="weather-card main-weather">
+                <div class="weather-card main-weather fade-in">
                     <!-- Animation will be inserted here by JavaScript -->
                     <div class="weather-content">
                         <img src="" alt="weather icon" class="weather-icon">
@@ -48,38 +48,38 @@
                     </div>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-tint"></i>
                     <h3>Humidity</h3>
                     <p class="humidity"></p>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-wind"></i>
                     <h3>Wind Speed</h3>
                     <p class="wind-speed"></p>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-temperature-low"></i>
                     <h3>Feels Like</h3>
                     <p class="feels-like"></p>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-compress-arrows-alt"></i>
                     <h3>Pressure</h3>
                     <p class="pressure"></p>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-lungs"></i>
                     <h3>Air Quality</h3>
                     <p class="aqi"></p>
-                    <p class="aqi-text" style="font-size: 0.9rem; margin-top: 0.5rem;"></p>
+                    <p class="aqi-text"></p>
                 </div>
 
-                <div class="weather-card">
+                <div class="weather-card fade-in">
                     <i class="fas fa-sun"></i>
                     <h3>Sun Times</h3>
                     <div class="sun-times">
@@ -94,7 +94,16 @@
                 <div class="forecast-container"></div>
             </div>
         </main>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
+    
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html> 
